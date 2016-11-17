@@ -1,0 +1,299 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&8Suits'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: ''
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: click'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 
+    left-click: false
+    right-click: true
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+  
+  
+main-Menu:
+  COMMAND: 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&eMain Menu'
+  ID: arrow
+  POSITION-X: 5
+  POSITION-Y: 6
+  KEEP-OPEN: true
+
+
+ravehelmet:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit rave helmet {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lRave Helmet'
+  ID: 298
+  COLOR: 15,69,120
+  DATA-VALUE: 0
+  POSITION-X: 2
+  POSITION-Y: 2
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.ravehelmet'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+ravechestplate:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit rave chestplate {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lRave Chestplate'
+  ID: 299
+  COLOR: 150,60,80
+  DATA-VALUE: 0
+  POSITION-X: 2
+  POSITION-Y: 3
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.ravechestplate'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+raveleggings:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit rave leggings {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lRave Leggings'
+  ID: 300
+  COLOR: 0,250,0
+  DATA-VALUE: 0
+  POSITION-X: 2
+  POSITION-Y: 4
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.raveleggings'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+raveboots:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit rave boots {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lRave Boots'
+  ID: 301
+  COLOR: 0,250,150
+  DATA-VALUE: 0
+  POSITION-X: 2
+  POSITION-Y: 5
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.raveboots'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+astronauthelmet:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit astronaut helmet {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lAstronaut Helmet'
+  ID: 20
+  DATA-VALUE: 0
+  POSITION-X: 4
+  POSITION-Y: 2
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.astronauthelmet'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+astronautchestplate:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit astronaut chestplate {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lAstronaut Chestplate'
+  ID: 315
+  DATA-VALUE: 0
+  POSITION-X: 4
+  POSITION-Y: 3
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.astronautchestplate'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+astronautleggings:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit astronaut leggings {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lAstronaut Leggings'
+  ID: 316
+  DATA-VALUE: 0
+  POSITION-X: 4
+  POSITION-Y: 4
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.astronautleggings'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+astronautboots:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit astronaut boots {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lAstronaut Boots'
+  ID: 317
+  DATA-VALUE: 0
+  POSITION-X: 4
+  POSITION-Y: 5
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.astronautboots'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+diamondhelmet:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit diamond helmet {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lDiamond Helmet'
+  ID: 310
+  DATA-VALUE: 0
+  POSITION-X: 6
+  POSITION-Y: 2
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.diamondhelmet'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+diamondchestplate:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit diamond chestplate {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lDiamond Chestplate'
+  ID: 311
+  DATA-VALUE: 0
+  POSITION-X: 6
+  POSITION-Y: 3
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.diamondchestplate'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+diamondleggings:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit diamond leggings {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lDiamond Leggings'
+  ID: 312
+  DATA-VALUE: 0
+  POSITION-X: 6
+  POSITION-Y: 4
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.diamondleggings'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+diamondboots:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit diamond boots {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lDiamond Boots'
+  ID: 313
+  DATA-VALUE: 0
+  POSITION-X: 6
+  POSITION-Y: 5
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.diamondboots'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+santahelmet:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit santa helmet {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lSanta Hat'
+  ID: 298
+  COLOR: 250,0,0
+  DATA-VALUE: 0
+  POSITION-X: 8
+  POSITION-Y: 2
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.santahelmet'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+santachestplate:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit santa chestplate {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lSanta Chestplate'
+  ID: 299
+  COLOR: 250,0,0
+  DATA-VALUE: 0
+  POSITION-X: 8
+  POSITION-Y: 3
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.santachestplate'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+santaleggings:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit santa leggings {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lSanta Leggings'
+  ID: 300
+  COLOR: 250,0,0
+  DATA-VALUE: 0
+  POSITION-X: 8
+  POSITION-Y: 4
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.santaleggings'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'
+  
+  
+santaboots:
+  COMMAND:
+  - 'console: execute {player} ~ ~ ~ /playsound random.orb {player} ~ ~ ~ 1000000'
+  - 'op: uc toggle suit santa boots {player}'
+  - 'console: cc open cosmetics-main.yml {player}'
+  NAME: '&a&lSanta Boots'
+  ID: 301
+  COLOR: 250,0,0
+  DATA-VALUE: 0
+  POSITION-X: 8
+  POSITION-Y: 5
+  KEEP-OPEN: true
+  PERMISSION: 'cosmetics.suits.santaboots'
+  PERMISSION-MESSAGE: '&7[&aCosmetics&7] &cYou have not unlocked this yet'

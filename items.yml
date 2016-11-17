@@ -1,0 +1,62 @@
+worldedit:
+  name: '&cWorld Edit &8(&c&lDONATOR PERK&8)'
+  id: 271
+  slot: 9
+  data-value: 0
+  lore:
+    - '&7You must donate to gain access to world edit.'
+    - '&7This is only a limited time deal. So vote daily! &8(&c/buy&8)'
+  give-at-respawn: true
+  first-join-only: false
+  allow-drop: true
+  block-movement: true
+  disabled-worlds: world_nether, world_the_end
+  give-on-world-change: true
+
+voxel:
+  name: '&cVoxel Sniper &8(&c&lDONATOR PERK&8)'
+  id: 262
+  slot: 8
+  data-value: 0
+  lore:
+    - '&7You must donate to gain access to voxel sniper'
+    - '&7This is only a limited time deal. So vote daily! &8(&c/buy&8)'
+  give-at-respawn: true
+  first-join-only: false
+  allow-drop: true
+  block-movement: true
+  disabled-worlds: world_nether, world_the_end
+  give-on-world-change: true
+
+
+info:
+  name: '&cCreative Info '
+  command: 'guide'
+  id: 340
+  slot: 3
+  data-value: 0
+  lore:
+    - '&7View all the information on this &cCreative Server'
+    - '&7Guides & Tricks in here can help you do well!'
+  give-at-respawn: true
+  first-join-only: false
+  allow-drop: true
+  block-movement: true
+  disabled-worlds: world_nether, world_the_end
+  give-on-world-change: true
+
+coins:
+  command: 'coins'
+  name: '&cGrab your Coins'
+  id: 266
+  slot: 5
+  data-value: 0
+  lore:
+    - '&7Looking to purchase all the amazing premium stuff?'
+    - '&7Make sure to purchase coins and get them today!'
+  give-at-respawn: true
+  first-join-only: false
+  allow-drop: true
+  block-movement: true
+  disabled-worlds: world_nether, world_the_end
+  give-on-world-change: true

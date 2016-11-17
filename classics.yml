@@ -1,0 +1,80 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&c&lRUSE &7» &cGames'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'classics'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 399
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+prison:
+  COMMAND: 'prison'
+  STAY-OPEN: true
+  NAME: '&cThe Prison Realm'
+  LORE:
+    - '&7'
+    - '&7Mine out the realm and show your inmates that'
+    - '&7you have broken out of the realm and into freedom'
+    - '&7you shall conquer!'
+  ID: 278
+  POSITION-X: 2
+  POSITION-Y: 2
+
+factions:
+  COMMAND: 'factions'
+  STAY-OPEN: true
+  NAME: '&cThe Faction Realm'
+  LORE:
+    - '&7'
+    - '&7It is time to take out those conquerors'
+    - '&7tell them that you are their leader'
+    - '&7Do not let them down!'
+  ID: diamond_sword
+  POSITION-X: 3
+  POSITION-Y: 2
+
+skyblock:
+  COMMAND: 'skyblock'
+  STAY-OPEN: true
+  NAME: '&cThe Skyblock Realm'
+  LORE:
+    - '&7'
+    - '&7Your island of adventure begins today...'
+    - '&7so what are you waiting for, join us'
+    - '&7with your friends and conqueror the sky islands!'
+  ID: 3
+  POSITION-X: 4
+  POSITION-Y: 2

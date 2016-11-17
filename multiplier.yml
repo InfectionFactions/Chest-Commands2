@@ -1,0 +1,11 @@
+This will just be a command masking plugin.
+
+If a player runs:  /mp set 2.0
+It run the command through console as: /asa setmultiplier %player% 2.0 0
+
+You must have the permissions: multiplier.2
+If you dont have the permission it tell the person running the command:
+&8[&eOG&8] &7You must purchase this multiplier to use it! &8(&e/buy&8)
+
+There are 3 multipliers all together so there's,
+2.0, 3.0 and 4.0

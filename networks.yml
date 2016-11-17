@@ -1,0 +1,58 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&a&lSYN &8&l| &aNetworks'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'network'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 399
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+vexuh:
+  KEEP-OPEN: true
+  NAME: '&aVexuh Realms'
+  LORE:
+    - '&7Introducing &aVexuh Realms'
+    - '&7Version &8» &a1.8'
+    - '&7IP &8» &aplay.vexuh.com'
+    - '&7'
+    - '&aServers listed on this network,'
+    - '&aPrison &8&l| &aFactions'
+    - '&aFactions &8&l| &aKitPVP'
+    - '&aSG &8&l| &aVillager Defense'
+    - '&aCSurvival &8&l| &aArcade'
+  ID: paper
+  POSITION-X: 3
+  POSITION-Y: 2

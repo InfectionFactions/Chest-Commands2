@@ -1,0 +1,235 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&aVexuh core &8&l| &aStore'
+  
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 4
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'store; buy; donate; support'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 278
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+1-5:
+  COMMAND: 'survivalist'
+  NAME: '&aSurvivalist Global Ranks'
+  LORE:
+    - '&7These global ranks are for all &aSurvivalist Games'
+    - '&7They wont be available for other realms'
+    - '&7'
+    - '&7Click to view ranks for specific server realms'
+  ID: diamond_sword
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 2
+1-25:
+  COMMAND: 'arcader'
+  NAME: '&aArcader Global Ranks'
+  LORE:
+    - '&7These global ranks are for all &aArcader Games'
+    - '&7They wont be available for other realms'
+    - '&7'
+    - '&7Click to view ranks for specific server realms'
+  ID: diamond
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 2
+1-2225:
+  COMMAND: 'sky'
+  NAME: '&aSky Global Ranks'
+  LORE:
+    - '&7These global ranks are for all &aSky Games'
+    - '&7They wont be available for other realms'
+    - '&7'
+    - '&7Click to view ranks for specific server realms'
+  ID: iron_ingot
+  POSITION-X: 6
+  KEEP-OPEN: true
+  POSITION-Y: 2
+1-2355:
+  COMMAND: 'other'
+  NAME: '&aOther Global Ranks'
+  LORE:
+    - '&7These global ranks are for all &aOther Games'
+    - '&7They wont be available for other realms'
+    - '&7'
+    - '&7Click to view ranks for specific server realms'
+  ID: emerald
+  POSITION-X: 7
+  KEEP-OPEN: true
+  POSITION-Y: 2
+glass1:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 1
+  POSITION-Y: 1
+glass2:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 2
+  POSITION-Y: 1
+glass3:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 3
+  POSITION-Y: 1
+glass4:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 4
+  POSITION-Y: 1
+glass5:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 5
+  POSITION-Y: 1
+glass6:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 6
+  POSITION-Y: 1
+glass7:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 7
+  POSITION-Y: 1
+glass8:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 8
+  POSITION-Y: 1
+glass9:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 9
+  POSITION-Y: 1
+glass11:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 1
+  POSITION-Y: 4
+glass12:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 2
+  POSITION-Y: 4
+glass13:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 3
+  POSITION-Y: 4
+glass14:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 4
+  POSITION-Y: 4
+glass15:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 5
+  POSITION-Y: 4
+glass16:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 6
+  POSITION-Y: 4
+glass17:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 7
+  POSITION-Y: 4
+glass18:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 8
+  POSITION-Y: 4
+glass19:
+  NAME: '&a'
+  ID: '160:5, 1'
+  POSITION-X: 9
+  POSITION-Y: 4
+glass111:
+  NAME: '&a'
+  ID: '160:7, 1'
+  POSITION-X: 9
+  POSITION-Y: 2
+glass1013:
+  NAME: '&a'
+  ID: '160:7, 1'
+  POSITION-X: 1
+  POSITION-Y: 2
+glass1012:
+  NAME: '&a'
+  ID: '160:7, 1'
+  POSITION-X: 2
+  POSITION-Y: 2
+glass1011:
+  NAME: '&a'
+  ID: '160:7, 1'
+  POSITION-X: 8
+  POSITION-Y: 2
+new111:
+  NAME: '&a'
+  ID: '160:7, 1'
+  POSITION-X: 1
+  POSITION-Y: 3
+new:
+  NAME: '&a'
+  ID: '160:7, 1'
+  POSITION-X: 9
+  POSITION-Y: 3
+barrier4:
+  NAME: '&a'
+  ID: '166, 1'
+  POSITION-X: 4
+  POSITION-Y: 3
+barrier5:
+  NAME: '&a'
+  ID: '166, 1'
+  POSITION-X: 5
+  POSITION-Y: 3
+barrier6:
+  NAME: '&a'
+  ID: '166, 1'
+  POSITION-X: 6
+  POSITION-Y: 3
+barrier7:
+  NAME: '&a'
+  ID: '166, 1'
+  POSITION-X: 7
+  POSITION-Y: 3
+barrier8:
+  NAME: '&a'
+  ID: '166, 1'
+  POSITION-X: 8
+  POSITION-Y: 3

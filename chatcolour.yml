@@ -1,0 +1,206 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&ePrison Chat Colours'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'chatcolor'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 278
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+title:
+  NAME: '&bWelcome to &bOriginal Gamers &bChat'
+  LORE:
+    - '&7Manage your chat colour through this menu.'
+    - '&7Warning, You must be a donator to use these...'
+  ID: 399
+  POSITION-X: 5
+  POSITION-Y: 6
+
+bedrockium:
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  NAME: '&2Green Coloured Chat'
+  COMMAND: 'colorgive {player} Dark_Green'
+  LORE:
+    - '&7Set your chat colour to &2&nThis'
+  ID: '351:2'
+  POSITION-X: 2
+  POSITION-Y: 2
+
+kits:
+  NAME: '&3Cyan Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} Cyan'
+  LORE:
+    - '&7Set your chat colour to &3&nThis'
+  ID: '351:6'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+guides:
+  NAME: '&6Gold Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} Gold'
+  LORE:
+    - '&7Set your chat colour to &6&nThis'
+  ID: '351:14'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+Plots:
+  NAME: '&9Blue Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} Dark_Aqua'
+  LORE:
+    - '&7Set your chat colour to &9&nThis'
+  ID: '351:4'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+Profile:
+  NAME: '&aLime Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} Green'
+  LORE:
+    - '&7Set your chat colour to &a&nThis'
+  ID: '351:10'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+leaderboards:
+  NAME: '&dPink Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} Pink'
+  LORE:
+    - '&7Set your chat colour to &d&nThis'
+  ID: '351:9'
+  POSITION-X: 7
+  POSITION-Y: 2
+vote:
+  NAME: '&5Purple Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} Dark_Purple'
+  LORE:
+    - '&7Set your chat colour to &5&nThis'
+  ID: '351:5'
+  POSITION-X: 8
+  POSITION-Y: 2
+donate:
+  NAME: '&fWhite Coloured Chat'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  COMMAND: 'colorgive {player} White'
+  LORE:
+    - '&7Set your chat colour to &f&nThis'
+  ID: '351:7'
+  POSITION-X: 2
+  POSITION-Y: 3
+auction:
+  COMMAND: 'colorgive {player} Yellow'
+  PERMISSION-MESSAGE: '&8[&eOG Chat&8] &7You must be &e&nOctane&7 or purchase this alone from &e&n/buy&7 to use.
+  PERMISSION: 'chatcolor.use'
+  NAME: '&eYellow Coloured Chat'
+  LORE:
+    - '&7Set your chat colour to &e&nThis'
+  ID: '351:11'
+  POSITION-X: 3
+  POSITION-Y: 3
+rarity:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 3
+shop:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 3
+shop2:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 3
+vanessa:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 3
+tags:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 3
+empty1:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 4
+empty2:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 4
+empty3:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 4
+empty4:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 4
+empty5:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 4
+empty6:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 3
+  POSITION-Y: 4
+empty7:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 2
+  POSITION-Y: 4

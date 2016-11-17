@@ -1,0 +1,200 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&cFray &8» &cUnlock'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'unlockables'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: wool:1
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+Guides:
+  KEEP-OPEN: true
+  NAME: '&cThe Creative Unlockables'
+  LORE:
+    - '&7Get your unlockables'
+    - '&7from donating or voting'
+  ID: 399
+  POSITION-X: 5
+  POSITION-Y: 6
+
+blocks:
+  KEEP-OPEN: true
+  NAME: '&cBlocks Unlockable'
+  LORE:
+    - '&7Check out all the available &cBlocks'
+    - '&7That you are eligible to unlock'
+  ID: 166
+  POSITION-X: 2
+  POSITION-Y: 2
+
+treasure:
+  KEEP-OPEN: true
+  NAME: '&cRewards Unlockable'
+  LORE:
+    - '&7Feast your eyes on the &cCare Packages'
+    - '&7that are offered every day.'
+  ID: 'skull:3'
+  SKULL-OWNER: 'MHF_Chest'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+Voxel:
+  KEEP-OPEN: true
+  NAME: '&cHeads Unlockable'
+  LORE:
+    - '&7Check out all the available &cHeads'
+    - '&7That you are eligible to unlock'
+  ID: 'skull:3'
+  SKULL-OWNER: 'MHF_Creeper'
+  POSITION-X: 4
+  POSITION-Y: 2
+Goal:
+  KEEP-OPEN: true
+  NAME: '&cThe Goal'
+  LORE:
+    - '&7Look on what you can achieve with'
+    - '&7this creative server!'
+  ID: emerald
+  POSITION-X: 5
+  POSITION-Y: 2
+Team:
+  KEEP-OPEN: true
+  NAME: '&cThe Team'
+  LORE:
+    - '&7Who looks after this server?'
+    - '&7Who works for the Build Team?'
+  ID: 'skull:3'
+  SKULL-OWNER: 'MHF_QUESTION'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+barrier:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+barrier2:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 2
+barrier3:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 2
+  POSITION-Y: 3
+barrier4:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 3
+  POSITION-Y: 3
+barrier5:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 3
+barrier6:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 3
+barrier7:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 3
+barrier8:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 3
+barrier9:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 3
+barrier10:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 2
+  POSITION-Y: 4
+barrier11:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 3
+  POSITION-Y: 4
+barrier12:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 4
+barrier13:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 4
+barrier14:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 4
+barrier15:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 4
+barrier16:
+  COMMAND: 'tm msg {player} &c&lFRAY %nl% &7No guide found here'
+  NAME: '&c'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 4

@@ -1,0 +1,222 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&ePrison Kits'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'kits'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 278
+    left-click: false
+    right-click: true
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+title:
+  NAME: '&bWelcome to &bOriginal Gamers &bKits!'
+  LORE:
+    - '&7View all the Prison existing kits'
+    - '&7You can donate to receive some of these kits'
+  ID: 399
+  POSITION-X: 5
+  POSITION-Y: 6
+
+starter:
+  NAME: '&aKit Starter'
+  COMMAND: 'kit starter'
+  LORE:
+    - '&7Rank Required: &aA'
+    - '&7Type of Gear: &aDefault'
+    - '&7Received Every: &a24 Hours'
+  ID: 278
+  POSITION-X: 2
+  POSITION-Y: 2
+kits:
+  NAME: '&aKit Once'
+  COMMAND: 'kit once'
+  LORE:
+    - '&7Rank Required: &aA'
+    - '&7Type of Gear: &aDefault'
+    - '&7Received Every: &a10 Years'
+  ID: 278
+  POSITION-X: 3
+  POSITION-Y: 2
+guides:
+  NAME: '&aKit Supporter'
+  COMMAND: 'kit Supporter'
+  LORE:
+    - '&7Rank Required: &aSupporter'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a24 Hours'
+  ID: 278
+  POSITION-X: 4
+  POSITION-Y: 2
+Plots:
+  NAME: '&aKit Donor'
+  COMMAND: 'kit Donor'
+  LORE:
+    - '&7Rank Required: &aDonor'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a24 Hours'
+  ID: 278
+  POSITION-X: 5
+  POSITION-Y: 2
+Profile:
+  NAME: '&aKit Legion'
+  COMMAND: 'kit Legion'
+  LORE:
+    - '&7Rank Required: &aLegion'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a24 Hours'
+  ID: 278
+  POSITION-X: 6
+  POSITION-Y: 2
+leaderboards:
+  NAME: '&aLeaderboards'
+  COMMAND: 'tell: &8[&eOG Leaderboards&8] &cLeaderboards are currently under development, Check website for updates!'
+  LORE:
+    - '&7Check to see who is the ruling inmate!'
+    - '&7Will you rise to the top?'
+  ID: 'skull:3'
+  SKULL-OWNER: 'mikemy'
+  POSITION-X: 7
+  POSITION-Y: 2
+vote:
+  NAME: '&aVote for us'
+  COMMAND: 'vote'
+  LORE:
+    - '&7Vote for the server and receive'
+    - '&7OP Rewards (up to 5 links)!'
+  ID: 'gold_ingot'
+  POSITION-X: 8
+  POSITION-Y: 2
+donate:
+  NAME: '&aPurchase Ranks/Perks'
+  KEEP-OPEN: true
+  COMMAND: 'buy'
+  LORE:
+    - '&7Purchase ranks and perks to'
+    - '&7give you an higher advantage on escaping.'
+  ID: 'emerald'
+  POSITION-X: 2
+  POSITION-Y: 3
+auction:
+  NAME: '&aAuction House'
+  KEEP-OPEN: true
+  COMMAND: 'ah'
+  LORE:
+    - '&7Sell your items to players to get higher amounts'
+    - '&7Players mostly buy Rarities & Pickaxes'
+  ID: '351:4'
+  POSITION-X: 3
+  POSITION-Y: 3
+rarity:
+  NAME: '&aRarity Items'
+  COMMAND: 'tell: &8[&eOG Rarity&8] &cRarity Rewards are currently under development, Check website for updates!'
+  LORE:
+    - '&7Sell your items to players to get higher amounts'
+    - '&7Players mostly buy Rarities & Pickaxes'
+  ID: 'bedrock'
+  POSITION-X: 4
+  POSITION-Y: 3
+shop:
+  NAME: '&aSell Shop'
+  COMMAND: 'warp shop'
+  LORE:
+    - '&7Sell your items and purchase multipliers to sell for'
+    - '&7a higher price!'
+  ID: 'emerald_block'
+  POSITION-X: 5
+  POSITION-Y: 3
+shop2:
+  NAME: '&aBuy Shop'
+  COMMAND: 'warp bm'
+  LORE:
+    - '&7Buy items that you may want to use on your plots!'
+    - '&7(Shhh! do not tell anyone about this!)'
+  ID: 'diamond_block'
+  POSITION-X: 6
+  POSITION-Y: 3
+vanessa:
+  NAME: '&aVanessa & Husband'
+  COMMAND: 'ctc'
+  KEEP-OPEN: true
+  LORE:
+    - '&7Vanessa and her husband have some rewards to offer you!'
+    - '&7She is awaiting your call...'
+  ID: '373'
+  POSITION-X: 7
+  POSITION-Y: 3
+tags:
+  NAME: '&aTags'
+  COMMAND: 'tags'
+  KEEP-OPEN: true
+  LORE:
+    - '&7Change your display tags before your'
+    - '&7prestige tag.'
+  ID: 'map'
+  POSITION-X: 8
+  POSITION-Y: 3
+empty1:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 4
+empty2:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 4
+empty3:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 4
+empty4:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 4
+empty5:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 4
+empty6:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 3
+  POSITION-Y: 4
+empty7:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 2
+  POSITION-Y: 4

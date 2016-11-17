@@ -1,0 +1,596 @@
+#    _______                                     
+#   |__   __|                                    
+#      | |_ __ ___  __ _ ___ _   _ _ __ ___  ___ 
+#      | | '__/ _ \/ _` / __| | | | '__/ _ \/ __|
+#      | | | |  __/ (_| \__ \ |_| | | |  __/\__ \
+#      |_|_|  \___|\__,_|___/\__,_|_|  \___||___/
+#                                                
+# -------------------------------------------------
+# Result effects:
+# LIGHTNING, EXPLOSION, FLAME_EXPLOSION
+# -------------------------------------------------
+# Opening effects:
+# DEFAULT, FIREWORK, HOVER_BLOCK
+# -------------------------------------------------
+# Particle Effects:
+# http://pastebin.com/uY88YjPX
+# -------------------------------------------------
+# Items:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# -------------------------------------------------
+# Sounds:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# -------------------------------------------------
+# Use the links above for help.
+# You can make as many Treasure/Rarity/Reward as you want.
+# Just copy that path, paste it, and edit it.
+# -------------------------------------------------
+
+
+opening-effect-line-amount: 5
+particle-play-in-every-tick: 1
+loots:
+  common:
+    broadcast-enabled: false
+    broadcast: '&6%player% &efound a common %item%&e!'
+    sound-enabled: false
+    sound: ARROW_SHOOT
+    reward1:
+      reward-type: money
+      value: 10-500
+      item:
+        name: '&a%value% Coins'
+        type: GOLD_INGOT
+    reward2:
+      reward-type: money
+      value: 650-1200
+      item:
+        name: '&a%value% Coins'
+        type: GOLD_INGOT
+    reward3:
+      reward-type: command
+      value: sync console all pex user %player% add ultracosmetics.gadgets.snowball
+      item:
+        name: '&aSnowball Gadget'
+        type: SNOW_BALL
+    reward4:
+      reward-type: command
+      value: sync console all pex user %player% add ultracosmetics.gadgets.thorshammer
+      item:
+        name: '&aThors Hammer Gadget'
+        type: IRON_AXE
+  rare:
+    broadcast-enabled: true
+    broadcast: '&7[&aTreasures&7] &a%player% &7found a Rare &e%item%&7!'
+    sound-enabled: true
+    sound: WITHER_SPAWN
+    reward1:
+      reward-type: money
+      value: 1500-5000
+      item:
+        name: '&e%value% Coins'
+        type: GOLD_INGOT
+    reward2:
+      reward-type: money
+      value: 5500-10000
+      item:
+        name: '&e%value% Coins'
+        type: GOLD_INGOT
+    reward3:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.ravehelmet
+      item:
+        name: '&aRave Suit Helmet'
+        type: LEATHER_HELMET
+    reward4:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.ravechestplate
+      item:
+        name: '&aRave Suit Chestplate'
+        type: LEATHER_CHESTPLATE
+    reward5:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.raveleggings
+      item:
+        name: '&aRave Suit Rave'
+        type: LEATHER_LEGGINGS
+    reward6:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.raveboots
+      item:
+        name: '&aRave Suit Boots'
+        type: LEATHER_BOOTS
+    reward7:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.astronauthelmet
+      item:
+        name: '&aAstronaut Suit Helmet'
+        type: GLASS
+    reward8:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.astronautchestplate
+      item:
+        name: '&aAstronaut Suit Chestplate'
+        type: GOLD_CHESTPLATE
+    reward9:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.astronautleggings
+      item:
+        name: '&aAstronaut Suit Leggings'
+        type: GOLD_LEGGINGS
+    reward10:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.astronautboots
+      item:
+        name: '&aAstronaut Suit Boots'
+        type: GOLD_BOOTS
+    reward11:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.diamondhelmet
+      item:
+        name: '&aDiamond Helmet Suit'
+        type: DIAMOND_HELMET
+    reward12:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.diamondchestplate
+      item:
+        name: '&aDiamond Suit Chestplate'
+        type: DIAMOND_CHESTPLATE
+    reward13:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.diamondleggings
+      item:
+        name: '&aDiamond Suit Leggings'
+        type: DIAMOND_LEGGINGS
+    reward14:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.diamondboots
+      item:
+        name: '&aDiamond Suit Boots'
+        type: DIAMOND_BOOTS
+    reward15:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.santahelmet
+      item:
+        name: '&aSanta Helmet Suit'
+        type: LEATHER_HELMET
+    reward16:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.santachestplate
+      item:
+        name: '&aSanta Suit Chestplate'
+        type: LEATHER_CHESTPLATE
+    reward17:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.santaleggings
+      item:
+        name: '&aSanta Suit Leggings'
+        type: LEATHER_LEGGINGS
+    reward18:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.suits.santaboots
+      item:
+        name: '&aSanta Suit Boots'
+        type: LEATHER_BOOTS
+    reward19:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.pets.sheep
+      item:
+        name: '&aSheep Pet'
+        type: MONSTER_EGG:91
+    reward20:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.pets.kitty
+      item:
+        name: '&aKitty Pet'
+        type: MONSTER_EGG:98
+    reward21:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.pets.dog
+      item:
+        name: '&aDog Pet'
+        type: MONSTER_EGG:95
+    reward22:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.pets.chick
+      item:
+        name: '&aChick Pet'
+        type: MONSTER_EGG:93
+    reward23:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.tsunami
+      item:
+        name: '&aTsunami Gadget'
+        type: WATER_BUCKET
+    reward24:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.tnt
+      item:
+        name: '&aTNT Gadget'
+        type: TNT
+    reward25:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.firework
+      item:
+        name: '&aFirework Gadget'
+        type: FIREWORK
+    reward26:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.melonthrower
+      item:
+        name: '&aMelon Thrower Gadget'
+        type: MELON_BLOCK
+    reward27:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.etherealpearls
+      item:
+        name: '&aEthereal Pearls Gadget'
+        type: ENDER_PEARL
+    reward28:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.fleshhook
+      item:
+        name: '&aFlesh Hook Gadget'
+        type: TRIPWIRE_HOOK
+  legendary:
+    broadcast-enabled: true
+    broadcast: '&7[&aTreasures&7] &a%player% &7found a Legendary &e%item%&7!'
+    sound-enabled: true
+    sound: WITHER_DEATH
+    reward1:
+      reward-type: money
+      value: 10000-16000
+      item:
+        name: '&e%value% Coins'
+        type: GOLD_INGOT
+    reward2:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.morphs.chicken
+      item:
+        name: '&aChicken Morph'
+        type: EGG
+    reward3:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.morphs.pig
+      item:
+        name: '&aPig Morph'
+        type: PORK
+    reward4:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.morphs.enderman
+      item:
+        name: '&aEnderman Morph'
+        type: ENDER_PEARL
+    reward5:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.morphs.slime
+      item:
+        name: '&aSlime Morph'
+        type: SLIME_BALL
+    reward6:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.morphs.bat
+      item:
+        name: '&aBat Morph'
+        type: RABBIT_FOOT
+    reward7:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.morphs.snowman
+      item:
+        name: '&aSnowman Morph'
+        type: SNOW_BALL
+    reward8:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.walkingdead
+      item:
+        name: '&aWalking Dead Mount'
+        type: ROTTEN_FLESH
+    reward9:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.mountoffire
+      item:
+        name: '&aMount Of Fire Mount'
+        type: LAVA_BUCKET
+    reward10:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.mountofwater
+      item:
+        name: '&aMount Of Water Mount'
+        type: WATER_BUCKET
+    reward11:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.snake
+      item:
+        name: '&aSnake Mount'
+        type: BLAZE_ROD
+    reward12:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.nyansheep
+      item:
+        name: '&aNyan Sheep Mount'
+        type: INK_SACK:1
+    reward13:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.hypecart
+      item:
+        name: '&aHype Cart Mount'
+        type: MINECART
+    reward14:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.rudolph
+      item:
+        name: '&aRudolph Mount'
+        type: GOLDEN_CARROT
+    reward15:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.druggedhorse
+      item:
+        name: '&aDrugged Horse Mount'
+        type: SUGAR
+    reward16:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.skysquid
+      item:
+        name: '&aSky Squid Mount'
+        type: INK_SACK:0
+    reward17:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.mounts.slime
+      item:
+        name: '&aSlime Mount'
+        type: SLIME_BALL
+    reward18:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.rocket
+      item:
+        name: '&aRocket Gadget'
+        type: FIREWORKS
+    reward19:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.fungun
+      item:
+        name: '&aFun Gun Gadget'
+        type: BLAZE_ROD
+    reward20:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.ghostparty
+      item:
+        name: '&aGhost Party Gadget'
+        type: SKULL_ITEM
+    reward21:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.christmastree
+      item:
+        name: '&aChristmas Tree Gadget'
+        type: TALLGRASS:2
+    reward22:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.trampoline
+      item:
+        name: '&aTrampoline Gadget'
+        type: WOOL:11
+    reward23:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.paintballgun
+      item:
+        name: '&aPaintball Gun Gadget'
+        type: DIAMOND_BARDING
+    reward24:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.batblaster
+      item:
+        name: '&aBat Blaster Gadget'
+        type: IRON_BARDING
+    reward25:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.explosivesheep
+      item:
+        name: '&aExplosive Sheep Gadget'
+        type: SHEARS
+    reward26:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.quakegun
+      item:
+        name: '&aQuake Gun Gadget'
+        type: DIAMOND_HOE
+    reward27:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.parachute
+      item:
+        name: '&aParachue Gadget'
+        type: LEASH
+    reward28:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.chickenator
+      item:
+        name: '&aChickenator Gadget'
+        type: COOKED_CHICKEN
+    reward29:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.gadgets.colorbomb
+      item:
+        name: '&aColor Bomb Gadget'
+        type: WOOL:3
+  mythical:
+    broadcast-enabled: true
+    broadcast: '&7[&aTreasures&7] &a%player% &7found a Mythical &e%item%&7!'
+    sound-enabled: true
+    sound: ENDERDRAGON_DEATH
+    reward1:
+      reward-type: money
+      value: 20000-30000
+      item:
+        name: '&e%value% Coins'
+        type: GOLD_INGOT
+    reward2:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.snowcloud
+      item:
+        name: '&aSnow Cloud Particle'
+        type: INK_SACK:7
+    reward3:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.bloodhelix
+      item:
+        name: '&aBlood Helix Particle'
+        type: REDSTONE
+    reward4:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.flamerings
+      item:
+        name: '&aFlame Rings Particle'
+        type: MAGMA_CREAM
+    reward5:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.inlove
+      item:
+        name: '&aIn Love Particle'
+        type: APPLE
+    reward6:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.frozenwalk
+      item:
+        name: '&aFrozen Walk Particle'
+        type: SUGAR
+    reward7:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.inferno
+      item:
+        name: '&aInferno Particle'
+        type: INK_SACK:14
+    reward8:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.angelwings
+      item:
+        name: '&aAngel Wings Particle'
+        type: FEATHER
+    reward9:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.angelwings
+      item:
+        name: '&aAngel Wings Particle'
+        type: FEATHER
+    reward10:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.superhero
+      item:
+        name: '&aSuperhero Particle'
+        type: GLOWSTONE_DUEST
+    reward11:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.santahat
+      item:
+        name: '&aSanta Hat Particle'
+        type: LEATHER_HELMET
+    reward12:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.music
+      item:
+        name: '&aMusic Particle'
+        type: RECORD_WARD
+    reward13:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.enchanted
+      item:
+        name: '&aEnchanted Particle'
+        type: BOOK
+    reward14:
+      reward-type: command
+      value: sync console all pex user %player% add cosmetics.particles.raincloud
+      item:
+        name: '&aRain Cloud Particle'
+        type: INK_SACK:4
+inventory:
+  title: Treasures
+  row: 3
+  canbuy: '&aClick to buy'
+  cantbuy: '&cNot enough coins'
+treasures:
+  treasure1:
+    display-name: '&aDusty Treasure Chest'
+    lore:
+    - ''
+    - '&7A really old chest containing'
+    - '&7bad loots.'
+    - ''
+    - '&eKeys > &7%keys%'
+    - '&ePrice > &71000 Coins'
+    - '%purchasable%'
+    slot: 11
+    item: CHEST
+    price: 1000
+    result-effect: LIGHTNING
+    opening-particle: CRIT
+    opening-effect: DEFAULT
+    open-broadcast: false
+    use-key: false
+    rarities:
+      common:
+        chance: 90
+      rare:
+        chance: 10
+      legendary:
+        chance: 0
+      mythical:
+        chance: 0
+  treasure2:
+    display-name: '&aMagma Treasure Chest'
+    lore:
+    - ''
+    - '&7buried in the depths of '
+    - '&7the nether'
+    - ''
+    - '&eKeys > &7%keys%'
+    - '&ePrice > &76000 Coins'
+    - '%purchasable%'
+    slot: 13
+    item: TRAPPED_CHEST
+    price: 6000
+    result-effect: FLAME
+    opening-particle: FLAME
+    opening-effect: FLAME
+    open-broadcast: true
+    open-message: '&7[&aTreasures&7] &a%player% &7is opening a &eMagma Treasure Chest'
+    use-key: false
+    rarities:
+      common:
+        chance: 60
+      rare:
+        chance: 35
+      legendary:
+        chance: 5
+      mythical:
+        chance: 0
+  ender-treasure:
+    display-name: '&aEnder Treasure Chest'
+    lore:
+    - ''
+    - '&7Legends say it was the heart'
+    - '&7of the deadly dragon'
+    - ''
+    - '&eKeys > &7%keys%'
+    - '&ePrice > &715000 Coins'
+    - '%purchasable%'
+    slot: 15
+    item: ENDER_CHEST
+    price: 15000
+    result-effect: EXPLOSION
+    opening-particle: SPELL_WITCH
+    opening-effect: DEFAULT
+    open-broadcast: true
+    open-message: '&7[&aTreasures&7] &a%player% &7is opening a &eEnder Treasure Chest'
+    use-key: true
+    rarities:
+      common:
+        chance: 52
+      rare:
+        chance: 38
+      legendary:
+        chance: 9
+      mythical:
+        chance: 1
+treasure-blocks:
+- 0;0;0;world
+- 26;33;96;world
+- 401;164;233;HubLobby
+- 386;162;256;HubLobby

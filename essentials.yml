@@ -1,0 +1,266 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&f&lIRON&b&lCLOUD &7- &aServers'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 12
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'server; list; glist; play; games'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: netherstar
+    left-click: true
+    right-click: true
+
+
+######################   X = Slot
+#+                  +#   Y = Row
+#       ITEMS        #
+#+                  +#
+######################
+
+
+OP-Prison:
+  NAME: '&3» &bPurge Prison'
+  LORE:
+    - '&dServer  &7» &dPrison'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dOnline'
+  ID: diamond_pickaxe
+  ENCHANTMENT: fortune;1
+  POSITION-X: 3
+  POSITION-Y: 3
+  COMMAND: 'server Prison'
+OP-Faction:
+  NAME: '&3» &bFearless Factions'
+  LORE:
+    - '&dServer  &7» &dFactions'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dOnline'
+  ID: diamond_sword
+  ENCHANTMENT: fortune;1
+  POSITION-X: 4
+  POSITION-Y: 3
+  COMMAND: 'server Factions'
+KitPVP:
+  NAME: '&3» &bKranked KitPvP'
+  LORE:
+    - '&dServer  &7» &dKitPvP'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dOnline'
+  ID: diamond_chestplate
+  ENCHANTMENT: fortune;1
+  POSITION-X: 5
+  POSITION-Y: 3
+  COMMAND: 'server KitPVP'
+Lotto:
+  NAME: '&3» &bLucky Lotto'
+  LORE:
+    - '&dServer  &7» &dLotto'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dOnline'
+  ID: emerald
+  ENCHANTMENT: fortune;1
+  POSITION-X: 6
+  POSITION-Y: 3
+  COMMAND: 'server lotto'
+SG:
+  NAME: '&3» &bComing soon...'
+  LORE:
+    - '&dServer  &7» &dComing soon...'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dDev'
+  ID: barrier
+  ENCHANTMENT: fortune;1
+  POSITION-X: 7
+  POSITION-Y: 3
+  COMMAND: 'Coming soon...'
+Survival:
+  NAME: '&3» &bComing soon...'
+  LORE:
+    - '&dServer  &7» &dComing soon...'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dDev'
+  ID: barrier
+  ENCHANTMENT: fortune;1
+  POSITION-X: 3
+  POSITION-Y: 4
+  COMMAND: 'Coming soon...'
+GTA:
+  NAME: '&3» &bComing soon...'
+  LORE:
+    - '&dServer  &7» Coming soon...'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dDev'
+  ID: barrier
+  ENCHANTMENT: fortune;1
+  POSITION-X: 4
+  POSITION-Y: 4
+  COMMAND: 'Coming soon...'
+Skyblock:
+  NAME: '&3» &bComing soon...'
+  LORE:
+    - '&dServer  &7» &dComing soon...'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dDev'
+  ID: barrier
+  ENCHANTMENT: fortune;1
+  POSITION-X: 5
+  POSITION-Y: 4
+  COMMAND: 'Coming soon...'
+Arcade:
+  NAME: '&3» &bComing soon...'
+  LORE:
+    - '&dServer  &7» &dComing soon...'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dDev'
+  ID: barrier
+  ENCHANTMENT: fortune;1
+  POSITION-X: 6
+  POSITION-Y: 4
+  COMMAND: 'Coming soon...'
+Zombie:
+  NAME: '&3» &bComing soon...'
+  LORE:
+    - '&dServer  &7» &dComing soon...'
+    - '&5Version  &7» &51.8'
+    - '&dStatus   &7» &dDev'
+  ID: barrier
+  ENCHANTMENT: fortune;1
+  POSITION-X: 7
+  POSITION-Y: 4
+  COMMAND: 'Coming soon...'
+1:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 2
+  POSITION-Y: 2
+2:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 3
+  POSITION-Y: 2
+3:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 4
+  POSITION-Y: 2
+4:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 5
+  POSITION-Y: 2
+5:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 6
+  POSITION-Y: 2
+6:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 7
+  POSITION-Y: 2
+7:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 8
+  POSITION-Y: 2
+8:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 2
+  POSITION-Y: 5
+9:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 3
+  POSITION-Y: 5
+10:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 4
+  POSITION-Y: 5
+11:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 5
+  POSITION-Y: 5
+12:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 6
+  POSITION-Y: 5
+13:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 7
+  POSITION-Y: 5
+14:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 8
+  POSITION-Y: 5
+15:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 2
+  POSITION-Y: 3
+16:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 2
+  POSITION-Y: 4
+17:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 8
+  POSITION-Y: 3
+18:
+  NAME: '&3'
+  ID: 265
+  POSITION-X: 8
+  POSITION-Y: 4
+19:
+  NAME: '&dWebstore'
+  ID: 265
+  POSITION-X: 2
+  POSITION-Y: 9
+  COMMAND: 'tell: &d&lWebstore&7: &fhttp://ironcloudmc.org/'
+20:
+  NAME: '&dWebsite'
+  ID: 265
+  POSITION-X: 4
+  POSITION-Y: 9
+  COMMAND: 'tell: &d&lWebsite&7: &fhttp://ironcloudmc.org/'
+21:
+  NAME: '&dTeamspeak'
+  ID: 265
+  POSITION-X: 6
+  POSITION-Y: 9
+  COMMAND: 'tell: &d&lTeamspeak&7:&f ts.ironcloudmc.com'
+22:
+  NAME: '&dStaff'
+  ID: 265
+  POSITION-X: 8
+  POSITION-Y: 9
+  COMMAND: 'tell: &4&lOwners&7: &fOhKawaii & Squid__'

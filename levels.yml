@@ -1,0 +1,108 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&cFray &8» &cLevels'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'levels; level; levelup'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: wool:1
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+1:
+  COMMAND: 'level1'
+  NAME: '&cLevel 1'
+  LORE:
+    - '&7This is the very first level'
+    - '&7Everyone receives this on join!'
+    - '&7'
+    - '&7Contents:'
+    - '&7- &c35x35 Plots'
+  ID: '166'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+2:
+  COMMAND: 'level1'
+  NAME: '&cLevel 1'
+  LORE:
+    - '&7This is the very first level'
+    - '&7Everyone receives this on join!'
+    - '&7'
+    - '&7Contents:'
+    - '&7- &c35x35 Plots'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+3:
+  COMMAND: 'level1'
+  NAME: '&cLevel 1'
+  LORE:
+    - '&7This is the very first level'
+    - '&7Everyone receives this on join!'
+    - '&7'
+    - '&7Contents:'
+    - '&7- &c35x35 Plots'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+4:
+  COMMAND: 'level1'
+  NAME: '&cLevel 1'
+  LORE:
+    - '&7This is the very first level'
+    - '&7Everyone receives this on join!'
+    - '&7'
+    - '&7Contents:'
+    - '&7- &c35x35 Plots'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 2
+
+5:
+  COMMAND: 'level1'
+  NAME: '&cLevel 1'
+  LORE:
+    - '&7This is the very first level'
+    - '&7Everyone receives this on join!'
+    - '&7'
+    - '&7Contents:'
+    - '&7- &c35x35 Plots'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 2

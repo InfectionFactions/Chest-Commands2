@@ -1,0 +1,203 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&c&lRUSE &7» &cGames'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'arcaders'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 399
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+skywars:
+  COMMAND: 'skywars'
+  STAY-OPEN: true
+  NAME: '&cThe Skywars Realm'
+  LORE:
+    - '&7'
+    - '&7Fight with or against other sky warriors'
+    - '&7hit them off the floating realms and take'
+    - '&7the victory for yourself!'
+  ID: ender_pearl
+  POSITION-X: 2
+  POSITION-Y: 2
+
+survivalgames:
+  COMMAND: 'sg'
+  STAY-OPEN: true
+  NAME: '&cThe SG Realm'
+  LORE:
+    - '&7'
+    - '&7It is time for 74th Annual Hunger Games!'
+    - '&7Will you survive against the 23 other tributes?'
+    - '&7It is time to meet your maker!'
+  ID: bow
+  POSITION-X: 3
+  POSITION-Y: 2
+
+paintball:
+  COMMAND: 'paintball'
+  STAY-OPEN: true
+  NAME: '&cThe Paintball Realm'
+  LORE:
+    - '&7'
+    - '&7Join other conquerors in the multiple games'
+    - '&7and shoot them with your paintballs and take'
+    - '&7the game for the winning! Will you survive?'
+  ID: 2
+  POSITION-X: 4
+  POSITION-Y: 2
+
+getdown:
+  COMMAND: 'oitc'
+  STAY-OPEN: true
+  NAME: '&cThe Chamber Realm'
+  LORE:
+    - '&7'
+    - '&7There is only you in the chamber!'
+    - '&7Will you shoot down other enemies'
+    - '&7and become the last survivor?'
+  ID: feather
+  POSITION-X: 5
+  POSITION-Y: 2
+
+seeker:
+  COMMAND: 'hidenseek'
+  STAY-OPEN: true
+  NAME: '&cThe Seekers Realm'
+  LORE:
+    - '&7'
+    - '&7Will you hide against the evil forces of nature?'
+    - '&7or will you find those hiders and kill them!?'
+    - '&7What team will you join?'
+  ID: crafting_bench
+  POSITION-X: 6
+  POSITION-Y: 2
+
+notopen1:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 7
+  POSITION-Y: 2
+notopen2:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 8
+  POSITION-Y: 2
+notopen4:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 2
+  POSITION-Y: 3
+notopen5:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 3
+  POSITION-Y: 3
+notopen6:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 4
+  POSITION-Y: 3
+notopen7:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 5
+  POSITION-Y: 3
+notopen8:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 6
+  POSITION-Y: 3
+notopen9:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 7
+  POSITION-Y: 3
+notopen10:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 8
+  POSITION-Y: 3
+notopen11:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 2
+  POSITION-Y: 4
+notopen12:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 3
+  POSITION-Y: 4
+notopen13:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 4
+  POSITION-Y: 4
+notopen14:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 5
+  POSITION-Y: 4
+notopen15:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 6
+  POSITION-Y: 4
+notopen16:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 7
+  POSITION-Y: 4
+notopen17:
+  COMMAND: 'tm msg {PLAYER} &c&lRUSE %nl% &7No realm found'
+  NAME: '&c'
+  ID: 166
+  POSITION-X: 8
+  POSITION-Y: 4

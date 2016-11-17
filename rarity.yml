@@ -1,0 +1,225 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&ePrison Rarity'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 6
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu; m; me')
+  command: 'rarity'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note pling'
+
+  # open-with-item - OPTIONAL
+  # The menu will open only right-clicking with orange wool [35:1]
+  open-with-item:
+    id: 278
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+title:
+  NAME: '&bWelcome to &bOriginal Gamers &bRarity'
+  LORE:
+    - '&7View all the Prison Rarity Items'
+    - '&7You must contact a admin to redeem them!'
+  ID: 399
+  POSITION-X: 5
+  POSITION-Y: 6
+
+bedrockium:
+  NAME: '&aBedrockium'
+  LORE:
+    - '&7Get &e10&7 of &eBedrockium &7for: &a2 Hours of Fly'
+    - '&7Get &e50&7 of &eBedrockium &7for: &a1 Free Vote'
+    - '&7Get &e100&7 of &eBedrockium &7for: &aVote Party'
+    - '&7Get &e250&7 of &eBedrockium &7for: &a1 Free Plot'
+    - '&7Get &e500&7 of &eBedrockium &7for: &aColoured Chat'
+  ID: 7
+  POSITION-X: 2
+  POSITION-Y: 2
+
+kits:
+  NAME: '&aPodzolous'
+  LORE:
+    - '&7Get &e10&7 of &eBedrockium &7for: &a10 Experience'
+    - '&7Get &e50&7 of &eBedrockium &7for: &a1 Legendary Crate'
+    - '&7Get &e100&7 of &eBedrockium &7for: &a1 Holiday Crate'
+    - '&7Get &e250&7 of &eBedrockium &7for: &a1 Monthly Crate'
+    - '&7Get &e500&7 of &eBedrockium &7for: &a1 Rank Crate'
+  ID: '3:2'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+guides:
+  NAME: '&aKit Supporter'
+  COMMAND: 'kit Supporter'
+  LORE:
+    - '&7Rank Required: &aSupporter'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a24 Hours'
+  ID: 278
+  POSITION-X: 4
+  POSITION-Y: 2
+Plots:
+  NAME: '&aKit Donor'
+  COMMAND: 'kit Donor'
+  LORE:
+    - '&7Rank Required: &aDonor'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a24 Hours'
+  ID: 278
+  POSITION-X: 5
+  POSITION-Y: 2
+Profile:
+  NAME: '&aKit Legion'
+  COMMAND: 'kit Legion'
+  LORE:
+    - '&7Rank Required: &aLegion'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a2 Days'
+  ID: 278
+  POSITION-X: 6
+  POSITION-Y: 2
+leaderboards:
+  NAME: '&aKit Platinum'
+  COMMAND: 'kit Platinum'
+  LORE:
+    - '&7Rank Required: &aPlatinum'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a3 Days'
+  ID: 278
+  POSITION-X: 7
+  POSITION-Y: 2
+vote:
+  NAME: '&aKit Titanium'
+  COMMAND: 'kit Titanium'
+  LORE:
+    - '&7Rank Required: &aTitanium'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a4 Days'
+  ID: 278
+  POSITION-X: 8
+  POSITION-Y: 2
+donate:
+  NAME: '&aKit OG'
+  COMMAND: 'kit OG'
+  LORE:
+    - '&7Rank Required: &aOG'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a5 Days'
+  ID: 278
+  POSITION-X: 2
+  POSITION-Y: 3
+auction:
+  NAME: '&aKit OG+'
+  COMMAND: 'kit OGPlus'
+  LORE:
+    - '&7Rank Required: &aOG+'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a6 Days'
+  ID: 278
+  POSITION-X: 3
+  POSITION-Y: 3
+rarity:
+  NAME: '&aKit Original'
+  COMMAND: 'kit Original'
+  LORE:
+    - '&7Rank Required: &aOriginal'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a7 Days'
+  ID: 278
+  POSITION-X: 4
+  POSITION-Y: 3
+shop:
+  NAME: '&aKit Ultra'
+  COMMAND: 'kit Ultra'
+  LORE:
+    - '&7Rank Required: &aUltra'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a8 Days'
+  ID: 278
+  POSITION-X: 5
+  POSITION-Y: 3
+shop2:
+  NAME: '&aKit Rogue'
+  COMMAND: 'kit Rogue'
+  LORE:
+    - '&7Rank Required: &aRogue'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a9 Days'
+  ID: 278
+  POSITION-X: 6
+  POSITION-Y: 3
+vanessa:
+  NAME: '&aKit Octane'
+  COMMAND: 'kit Octane'
+  LORE:
+    - '&7Rank Required: &aOctane'
+    - '&7Type of Gear: &aDonator'
+    - '&7Received Every: &a10 Days'
+  ID: 278
+  POSITION-X: 7
+  POSITION-Y: 3
+tags:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 3
+empty1:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 8
+  POSITION-Y: 4
+empty2:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 7
+  POSITION-Y: 4
+empty3:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 6
+  POSITION-Y: 4
+empty4:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 5
+  POSITION-Y: 4
+empty5:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 4
+  POSITION-Y: 4
+empty6:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 3
+  POSITION-Y: 4
+empty7:
+  NAME: '&a'
+  ID: '166'
+  POSITION-X: 2
+  POSITION-Y: 4
