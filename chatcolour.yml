@@ -7,7 +7,7 @@
 menu-settings:
 
   # name - appears as the title - REQUIRED
-  name: '&ePrison Chat Colours'
+  name: '&a TakenPvp Chat Colours'
 
   # rows - the number of rows of the chest - REQUIRED
   rows: 6
